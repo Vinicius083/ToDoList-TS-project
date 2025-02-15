@@ -134,7 +134,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-gray-900 text-white">
+    <div className="text-white">
       <TaskTableModel
         tasks={tasks}
         onEdit={handleEditTask}

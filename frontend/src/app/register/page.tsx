@@ -74,7 +74,7 @@ export default function Login() {
         marginTop: "10%",
       }}
     >
-      <Card className="w-96 h-auto mx-auto p-4 shadow-lg bg-transparent border-2 border-white/20 backdrop-blur-lg text-white">
+      <Card className="w-96 h-auto mx-auto p-4 shadow-lg bg-gray-800 text-white border-2 border-white/20">
         <CardHeader>
           <CardTitle>Cadastre-se</CardTitle>
         </CardHeader>
@@ -107,7 +107,7 @@ export default function Login() {
         <CardFooter>
           <Button
             onClick={handleRegister}
-            className="w-full bg-white text-black hover:bg-gray-200"
+            className="w-full bg-white text-black hover:bg-gray-300"
           >
             Cadastrar
           </Button>
@@ -115,12 +115,17 @@ export default function Login() {
         <p
           style={{
             display: "flex",
-            alignContent: "center",
+            alignItems: "center",
             justifyContent: "center",
-            gap: "4px",
           }}
         >
-          Já possui conta? <a href="/">Login</a>
+          Já possui conta?
+          <a
+            href="/"
+            className=" ml-1 p-1 hover:bg-gray-200 hover:text-gray-900 transition  duration-200 ease-in-out rounded"
+          >
+            Login
+          </a>
         </p>
       </Card>
     </div>

@@ -57,9 +57,9 @@ export default function Login() {
         marginTop: "13%",
       }}
     >
-      <Card className="w-96 h-auto mx-auto p-4 shadow-lg bg-transparent border-2 border-white/20 backdrop-blur-lg text-white">
+      <Card className="w-96 h-auto mx-auto p-4 shadow-lg bg-gray-800 text-white border-2 border-white/20">
         <CardHeader>
-          <CardTitle>Login</CardTitle>
+          <CardTitle className="text-3xl">Login</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <Input
@@ -86,11 +86,17 @@ export default function Login() {
         <p
           style={{
             display: "flex",
-            alignContent: "center",
+            alignItems: "center",
             justifyContent: "center",
           }}
         >
-          <a href="/register">Não possui conta? Registre-se</a>
+          Não possui conta? 
+          <a
+            href="/register"
+            className="ml-1 hover:bg-gray-200 hover:text-black transition p-1 duration-200 ease-in-out rounded"
+          >
+            Registre-se
+          </a>
         </p>
       </Card>
     </div>
